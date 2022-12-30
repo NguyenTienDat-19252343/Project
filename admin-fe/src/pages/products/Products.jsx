@@ -56,7 +56,7 @@ const Products = () => {
       <table className="table table-bordered table-light table-hover m-0">
         <thead>
           <tr>
-            <th>Name</th>
+            <th>Product Name</th>
             <th>Price</th>
             <th>Type</th>
             <th>Add</th>
