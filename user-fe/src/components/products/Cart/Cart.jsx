@@ -21,9 +21,9 @@ const Cart = () => {
         <h1> <strong className="text-center " style={{ paddingLeft: "100px"}}>My cart</strong> </h1>
        <br></br>
         <h1 className="text-center">Opps!...It's empty here and the kitties are really hungry now😿!</h1>
-        <NavLink to={"/products"} className="nav-link text-center pt-3">
-          <h6 className="btn btn-outline-primary">Shopping Now</h6>
-        </NavLink>
+        <NavLink to={"/products"} className="nav-link text-center pt-3 ">
+          <h6 className="btn btn-outline-secondary">Shopping Now</h6>
+          </NavLink>
         <br></br>
       </>
     );

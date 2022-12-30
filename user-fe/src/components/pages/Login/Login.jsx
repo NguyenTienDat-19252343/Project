@@ -50,7 +50,7 @@ const Login = () => {
                                                 </div>
 
                                                 <div className="text-center pt-1 mb-5 pb-1 col-lg-6 mx-auto">
-                                                    <button className="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 w-100" type="submit">Login</button>
+                                                    <button className="btn btn-dark btn-block fa-lg gradient-custom-2 mb-3 w-100 h-50" type="submit">Login</button>
                                                     <NavLink className="text-muted" to="">Forgot password?</NavLink>
                                                 </div>
 
