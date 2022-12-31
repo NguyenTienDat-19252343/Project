@@ -27,7 +27,7 @@ const Edit = () => {
   useEffect(() => {
     const fetchproducts = async () => {
       const { data } = await axios.get(
-        `https://server-api-guke.onrender.com/api/products/${id}`
+        `https://petshop-fgtf.onrender.com/api/products/${id}`
       );
       setProducts(data);
     };
@@ -37,7 +37,7 @@ const Edit = () => {
   const updateProduct = (_id) => async () => {
     try {
       await axios.put(
-        `https://server-api-guke.onrender.com/api/update/${_id}`, products
+        `https://petshop-fgtf.onrender.com/api/update/${_id}`, products
       );
       Swal.fire({
         position: 'center',

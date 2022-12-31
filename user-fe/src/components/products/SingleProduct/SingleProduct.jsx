@@ -21,7 +21,7 @@ const SingleProduct = () => {
 
     useEffect(() => {
         const fetchproduct = async() => {
-            const {data} = await axios.get(`https://server-api-guke.onrender.com/api/products/${id}`)
+            const {data} = await axios.get(`https://petshop-fgtf.onrender.com/api/products/${id}`)
             setProduct(data);
             setIdProduct(data._id)
         }

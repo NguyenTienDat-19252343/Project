@@ -22,7 +22,7 @@ const Order = () => {
     
     useEffect(() => {
         const fetchproducts = async() => {
-            const {data} = await axios.get("https://server-api-guke.onrender.com/api/orders")
+            const {data} = await axios.get("https://petshop-fgtf.onrender.com/api/orders")
             setProducts(data);   
         }
         fetchproducts();
