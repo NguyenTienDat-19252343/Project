@@ -58,7 +58,7 @@ const Checkout = () => {
     onSubmit: async (values) => {
       
       try {
-        await axios.post('https://petshop-fgtf.onrender.com/api/import/order', values);
+        await axios.post('https://petshop-ktww.onrender.com/api/import/order', values);
         swal({
           title: "Order Successes!",
           icon: "success",

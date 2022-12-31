@@ -6,7 +6,7 @@ import { getUserFailed, getUserStart, getUserSuccess } from './userSlice';
 export const loginUser = async(user, dispatch, navigate) => {
     dispatch(loginStart());
     try{
-        const res = await axios.post("https://petshop-fgtf.onrender.com/v1/auth/login", user);
+        const res = await axios.post("https://petshop-ktww.onrender.com/v1/auth/login", user);
         dispatch(loginSuccess(res.data));
         navigate("/");
     } catch(err) {
@@ -17,7 +17,7 @@ export const loginUser = async(user, dispatch, navigate) => {
 export const registerUser = async(user, dispatch, navigate) =>{
     dispatch(registerStart());
     try{
-        await axios.post("https://petshop-fgtf.onrender.com/v1/auth/register", user);
+        await axios.post("https://petshop-ktww.onrender.com/v1/auth/register", user);
         dispatch(registerSuccess());
         navigate("/login");
     } catch(err){
@@ -33,7 +33,7 @@ export const registerUser = async(user, dispatch, navigate) =>{
 export const logOut = async(dispatch, id, navigate, accessToken, axiosJWT) => {
     dispatch(logOutStart());
     try{
-        await axiosJWT.post("https://petshop-fgtf.onrender.com/v1/auth/logout",id,{
+        await axiosJWT.post("https://petshop-ktww.onrender.com/v1/auth/logout",id,{
             headers: {token: `Bearer ${accessToken}`}
         });
         dispatch(logOutSuccess());
@@ -48,7 +48,7 @@ export const logOut = async(dispatch, id, navigate, accessToken, axiosJWT) => {
 export const getAllUser = async(accessToken, dispatch) => {
     dispatch(getUserStart());
     try{
-        const res = await axios.get('https://petshop-fgtf.onrender.com/v1/user', {
+        const res = await axios.get('https://petshop-ktww.onrender.com/v1/user', {
             headers:{token: `Bearer ${accessToken}`}
         });
         dispatch(getUserSuccess(res.data));

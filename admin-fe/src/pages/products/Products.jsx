@@ -24,7 +24,7 @@ const Products = () => {
   useEffect(() => {
     const fetchproducts = async () => {
       const { data } = await axios.get(
-        "https://petshop-fgtf.onrender.com/api/products"
+        "https://petshop-ktww.onrender.com/api/products"
       );
       setProducts(data);
     };
@@ -34,7 +34,7 @@ const Products = () => {
   const deleteProduct = (id) => async () => {
     try {
       await axios.delete(
-        `https://petshop-fgtf.onrender.com/api/delete/${id}`
+        `https://petshop-ktww.onrender.com/api/delete/${id}`
       );
       Swal.fire({
         position: 'center',

@@ -49,7 +49,7 @@ const Upload = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        await axios.post('https://petshop-fgtf.onrender.com/api/import/singleproduct', dataPush);
+        await axios.post('https://petshop-ktww.onrender.com/api/import/singleproduct', dataPush);
         swal({
           title: "Success!",
           icon: "success",
