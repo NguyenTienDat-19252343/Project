@@ -7,7 +7,8 @@ import Login from "./pages/login/Login";
 import Navbar from "./pages/navbar/Navbar";
 import Upload from './pages/upload/Upload';
 import Edit from "./pages/edit/Edit";
-// import Blog from "./pages/blog/Blog";
+import Register from "./pages/Register/Register";
+
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
           <Route path='/order' element = { <Order />} />
           <Route path='/upload' element = { <Upload />} />
           <Route path='/edit/:id' element = { <Edit />} />
-          {/* <Route path='/blog' element = { <Blog />} /> */}
+          <Route path='/register' element = { <Register />} />
         </Routes>
    
     </Router>

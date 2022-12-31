@@ -38,12 +38,12 @@ const Register = () => {
 
                                                 <div className="form-outline mb-4 col-lg-6 mx-auto">
                                                     <label className="form-label" htmlFor="form2Example11">Username</label>
-                                                    <input  className="form-control" placeholder="Tên đăng nhập" onChange={(e) => setUsername(e.target.value)} />
+                                                    <input  className="form-control" placeholder="Username" onChange={(e) => setUsername(e.target.value)} />
                                                 </div>
 
                                                 <div className="form-outline mb-4 col-lg-6 mx-auto">
                                                     <label className="form-label" htmlFor="form2Example22">Password</label>
-                                                    <input type="password"  className="form-control" placeholder="Mật Khẩu" onChange={(e) => setPassword(e.target.value)} />
+                                                    <input type="password"  className="form-control" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
                                                 </div>
                                                 <div className="form-outline mb-4 col-lg-6 mx-auto">
                                                     <label className="form-label" htmlFor="form2Example22">Email</label>

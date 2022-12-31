@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import {loginUser} from '../../redux/apiRequest';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -49,7 +50,11 @@ const Login = () => {
 
                                                 <div className="text-center pt-1 mb-5 pb-1 col-lg-6 mx-auto">
                                                     <button className="btn text-light btn-block fa-lg gradient-custom-2 mb-3 w-100 bg-secondary" type="submit">Login</button>
-                                                   
+                                                    <NavLink className="text-muted" to="">Forgot password?</NavLink>
+                                                </div>
+                                                <div className="d-flex align-items-center justify-content-center pb-4">
+                                                    <p className="mb-0 me-2">Don't have an account?</p>
+                                                    <NavLink to="/register" type="button" className="btn btn-outline-danger">Create new</NavLink>
                                                 </div>
 
                                                 
