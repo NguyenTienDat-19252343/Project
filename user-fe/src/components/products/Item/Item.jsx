@@ -31,7 +31,7 @@ const Item = (props) => {
                         <h5 className="card-title fw-bold">₫ {props.price.toLocaleString()}</h5>
                         
                         {
-                        userCurrent && <button className="btn btn-primary" onClick={() => addItem(props)}>Add</button>
+                        userCurrent && <button className="btn btn-dark" onClick={() => addItem(props)}>Add</button>
                         } 
                         {
                            !userCurrent && (<NavLink to = '/login'>

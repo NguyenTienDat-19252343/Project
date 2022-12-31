@@ -17,7 +17,7 @@ const Home = () => {
              <section className="pt-5 " style={{backgroundColor:"#F8F992"}}>
                     <div className="row ">
                             <div className="col-md-6 mb-10 mb-md-0 ">
-                                <NavLink className="category-item text-black" to={'/Dry food'}>
+                                <NavLink className="category-item text-black" to={'/products'}>
                                 <img src="./assets/Home/img-catfood.png" className="card-img" alt="Background"/>
                                     
                                     <div className='text-center'>
@@ -27,7 +27,7 @@ const Home = () => {
                                 </NavLink>
                             </div>
                             <div className="col-md-6 mb-10 mb-md-0">
-                                <NavLink className="category-item mb-4 text-black" to={'/Wet food'}>
+                                <NavLink className="category-item mb-4 text-black" to={'/products'}>
                                 <img src="./assets/Home/img-wetfood.png" className="card-img" alt="Background"/><br></br>
                                 <div className='text-center'>
                                      <h6 className="category-item-title text-gray">Wet Food</h6>
