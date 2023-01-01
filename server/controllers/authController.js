@@ -53,34 +53,41 @@ const authController = {
   loginUser: async (req, res) => {
     try {
       const user = await User.findOne({ username: req.body.username });
+     
       if (!user) {
         res.status(404).json("Incorrect username");
       }
+    
       const validPassword = await bcrypt.compare(
         req.body.password,
         user.password
       );
+   
       if (!validPassword) {
         res.status(404).json("Incorrect password");
       }
-      if (user && validPassword) {
+      if (!!user.username &&validPassword) {
+        // lỗi code ở đây nó sẽ chạy đên catch nên không trả về được : fix lại  authController.generateAccessToken
+        // fix lại hàm  generateAccessToken cho đúng syntax
         //Generate access token
-        const accessToken = authController.generateAccessToken(user);
-        //Generate refresh token
-        const refreshToken = authController.generateRefreshToken(user);
-        refreshTokens.push(refreshToken);
-        //STORE REFRESH TOKEN IN COOKIE
-        res.cookie("refreshToken", refreshToken, {
+        // const accessToken = authController.generateAccessToken(user);
+        // //Generate refresh token
+        // const refreshToken = authController.generateRefreshToken(user);
+        // refreshTokens.push(refreshToken);
+        // //STORE REFRESH TOKEN IN COOKIE
+        res.cookie("refreshToken", 'abc', {
           httpOnly: true,
           secure:false,
           path: "/",
           sameSite: "strict",
         });
         const { password, ...others } = user._doc;
-        res.status(200).json({ ...others, accessToken, refreshToken });
+       
+        res.status(200).json({...others});
       }
     } catch (err) {
       res.status(500).json(err);
+      console.log("catch")
     }
   },
 
