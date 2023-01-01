@@ -100,13 +100,7 @@ const Checkout = () => {
       <form onSubmit={formik.handleSubmit}>
       <div className="container">
         <div className="py-5 text-center">
-          <img
-            className="d-block mx-auto mb-4"
-            src="/assets/Checkout/checkout.png"
-            alt=""
-            width="72"
-            height="72"
-          />
+          
           <h2>Checkout</h2>
         </div>
         {/* Products */}
@@ -187,7 +181,7 @@ const Checkout = () => {
                   <p style={{color: "red"}}>{formik.errors.phoneNumber}</p>
                 )}
 
-                    {/* Address */}
+             {/* Address */}
 
             <div class="row">
               <div class="col-md-5 mb-3">
@@ -253,8 +247,6 @@ const Checkout = () => {
                 )}
             </div>
 
-            <hr className="mb-4" />
-
             <div className="mb-3">
               <label htmlFor="exampleFormControlTextarea1" className="form-label">
                 Note
@@ -269,11 +261,13 @@ const Checkout = () => {
                 onChange={formik.handleChange}
               ></textarea>
             </div>
-            <hr className="mb-4" />
-            <button className="btn btn-primary btn-lg btn-block" type="submit" onClick={formik.handleSubmit}>
+           
+            <button className="btn btn-outline-warning btn-lg btn-block" type="submit" onClick={formik.handleSubmit}>
               Order
             </button>
+            <br></br><br></br><br></br>
           </div>
+          <br></br>
         </div>
       </div>
       </form>
