@@ -69,9 +69,9 @@ const authController = {
       if (!!user.username &&validPassword) {
         // lỗi code ở đây nó sẽ chạy đên catch nên không trả về được : fix lại  authController.generateAccessToken
         // fix lại hàm  generateAccessToken cho đúng syntax
-        //Generate access token
+        // Generate access token
         // const accessToken = authController.generateAccessToken(user);
-        // //Generate refresh token
+        // Generate refresh token
         // const refreshToken = authController.generateRefreshToken(user);
         // refreshTokens.push(refreshToken);
         // //STORE REFRESH TOKEN IN COOKIE
